@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio - Williams Rodrigues</title>
+
+<!-- Google Fonts & Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- CSS do Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- CSS Customizado -->
+<style>
+    /* ====== RESET ====== */
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+
+    body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #00002c, #07013b, #0d014b, #14025a, #1a0269);
+    color: white;
+    scroll-behavior: smooth;
+    }
+
+    /* ====== NAVBAR ====== */
+    .navbar {
+    background: rgba(3,0,28,0.9);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+    .navbar-brand {font-weight: 700; color: #fff !important;}
+    .nav-link {color: #fff !important; margin-left: 10px; transition: 0.3s;}
+    .nav-link:hover {color: #ffd700 !important;}
+
+    /* ====== IMAGENS ====== */
+    img.profile-pic {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: 0 6px 8px rgba(6, 51, 185, 0.5);
+    }
+    img.will {
+    display: block;
+    margin-left: auto;
+    margin-right: 5%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -75px;
+    margin-bottom: 20px;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    /* ====== TÍTULOS ====== */
+    h2 {
+    background: linear-gradient(to right, #4233e1, #604ae9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+    /* ====== CONTEÚDO ====== */
+    .container p {font-size: 1.1rem; margin-bottom: 20px;}
+
+    /* ====== CARDS ====== */
+    .card {
+    background: rgba(255,255,255,0.9);
+    color: #111;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin-bottom: 40px;
+    transition: all 0.3s ease-in-out;
+    }
+    .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    .text-justify {text-align: justify;}
+
+    /* ====== FOOTER ====== */
+    footer {
+    background-color: #03001c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 -3px 6px rgba(0,0,0,0.3);
+    }
+
+    /* ====== RESPONSIVIDADE ====== */
+    @media (max-width: 768px) {
+    img.profile-pic {height: 250px;}
+    img.will {margin-top: -50px; width: 120px; height: 120px;}
+    .nav-link {margin-left: 0; margin-top: 8px;}
+    }
+
+
+    /* ===== TIMELINE ===== */
+.timeline {
+border-left: 3px solid #4233e1;
+margin-left: 20px;
+padding-left: 20px;
+}
+.timeline-item {
+margin-bottom: 25px;
+position: relative;
+}
+.timeline-item::before {
+content: "";
+position: absolute;
+left: -11px;
+top: 5px;
+width: 10px;
+height: 10px;
+background: #642cf1;
+border-radius: 30%;
+}
+.timeline-item .date {
+font-weight: 600;
+color: #604ae9;
+display: block;
+margin-bottom: 5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+    <a class="navbar-brand" href="#">Williams Rodrigues</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre"><i class="fa-solid fa-user"></i> Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#softskils"><i class="fa-solid fa-lightbulb"></i> Soft Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experiencia"><i class="fa-solid fa-briefcase"></i> Experiências</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projetos"><i class="fa-solid fa-code"></i> Projetos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#videosefotos"><i class="fa-solid fa-photo-film"></i> Vídeos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato"><i class="fa-solid fa-envelope"></i> Contato</a></li>
+        </ul>
+    </div>
+    </div>
+</nav>
+
+<!-- IMAGENS -->
+<img src="C:\Users\user\Desktop\portifolio\app\static\img\cartaz.webp" alt="Banner do Portfólio" class="profile-pic">
+<img src="C:\Users\user\Desktop\portifolio\app\static\img\will.jpg" alt="Foto de Perfil" class="will">
+
+<!-- HOME -->
+<section id="home" class="container text-justify mt-4">      
+    <div class="card">
+    <h2>Bem-vindo ao meu Portfólio!</h2>
+    <p>Explore meus projetos, experiências e conquistas. Este espaço foi criado para apresentar meu trabalho de forma clara e profissional.</p>
+    </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="container text-justify mt-4">
+    <div class="card">
+    <h2>Sobre Mim</h2>
+    <p>Olá! Sou Williams Rodrigues, Administrador por formação, com MBA e Especialização em Ciência de Big Data & Analytics.
+    Tenho sólida experiência em logistica e gestão de dados, modelagem de banco de dados e desenvolvimento de soluções em Business Intelligence, utilizando Python, SQL, Power BI e ferramentas de visualização de dados para apoiar a tomada de decisão estratégica.  
+    Nos últimos anos, venho me dedicando à automação de processos, análises financeiras e operacionais para transporte e logística, além do desenvolvimento de sistemas web em Flask, Streamlit e HTML/CSS/Bootstrap, integrados a bancos de dados MySQL.   
+    Sou movido pela curiosidade e pela busca por soluções criativas que transformem dados em valor real para empresas.</p>
+    
+    <p>Atualmente, busco uma oportunidade nas áreas de Desenvolvimento ou Análise de Dados , onde possa aplicar minhas competências técnicas, visão analítica e foco em resultados para gerar valor real aos negócios."</p>
+
+
+    </div>    
+</section>
+
+<!-- SOFT SKILLS -->
+<section id="softskils" class="container text-justify mt-4">
+    <div class="card">
+    <h2>Soft Skills</h2>
+    <ul>
+        <li><strong>Comunicação Clara e Colaborativa</strong> – Experiência em traduzir dados complexos em insights acessíveis.</li>
+        <li><strong>Pensamento Analítico e Resolução de Problemas</strong> – Habilidade em identificar gargalos logísticos e otimizar custos.</li>
+        <li><strong>Tomada de Decisão Baseada em Dados</strong> – Forte uso de dashboards e KPIs para decisões estratégicas.</li>
+        <li><strong>Adaptabilidade e Aprendizado Contínuo</strong> – Transição de Administração para Big Data e BI com sucesso.</li>
+        <li><strong>Gestão de Projetos e Organização</strong> – Experiência no desenvolvimento de sistemas e planejamento logístico.</li>
+        <li><strong>Liderança Colaborativa</strong> – Atuação em equipes multidisciplinares.</li>
+        <li><strong>Foco em Resultados e Eficiência</strong> – Redução de custos e melhoria de performance.</li>
+        <li><strong>Criatividade e Inovação</strong> – Automação com Python e BI em diferentes áreas.</li>
+    </ul>
+    </div>
+</section>
+
+<!-- EXPERIÊNCIA -->
+<section id="experiencia" class="container text-justify mt-4">
+<div class="card">
+    <h2>Experiências Profissionais</h2>
+    
+    <div class="timeline">
+    <div class="timeline-item">
+        <span class="date">2024 - Atual</span>
+        <h5>Solution Logística</h5>
+        <p><strong>Analista de Logística e Dados PL</strong> – Responsável por acompanhar a operação logistica, acompanhar os principais indicadores de performance, realizar acompanhamento para melhoria dos processos.</p>
+    </div>
+
+    
+
+    <div class="timeline-item">
+        <span class="date">2023 - 2024</span>
+        <h5>Carajas Home Center</h5>
+        <p><strong>Análista de Planejamento e Constrole Logístico PL</strong> – Responsável pelo Planejamento de roteirização de entregas, acompanhar a operação logistica, acompanhar os principais indicadores de performance.</p>
+    </div>
+
+    <div class="timeline-item">
+        <span class="date">2022 - 2023</span>
+        <h5>Analista de Logistica PL</h5>
+        <p><strong>AM Comercial Ltda</strong> – Responsável por acompanhar a operação logistica , acompanhar as ocorrências de logística reversa e monitoramento dos casos de devolução de mercadorias, para montar plano de ação junto com a gestão para melhorar a eficiência operacional e minimizar os gargalos dos processos internos..</p>
+    </div>
+
+    <div class="timeline-item">
+        <span class="date">Desde 2018</span>
+        <h5>Consultor em Tecnologia e Dados</h5>
+        <p><strong>Micro Empreendedor Individual - MEI</strong> – Responsável por realizar treinamento com Microsoft Excel e desenvolvimento de soluções em Business Intelligence, utilizando Python, SQL, Power BI e ferramentas de visualização de dados para apoiar a tomada de decisão estratégica.</p>
+    </div>
+
+
+    </div>
+</div>
+</section>
+
+
+<!-- PROJETOS -->
+<section id="projetos" class="container text-justify mt-4">
+    <div class="card">
+    <h2>Meus Principais Projetos</h2>
+    <p><strong>1. WR SYSTEM – Sistema de Gestão para Academias</strong></p>
+    <p>Sistema em Python (Flask) + MySQL com dashboards e funcionalidades de gestão financeira e operacional.</p>
+    <p><strong>2. NEUROEDUC – Plataforma de Análise Educacional</strong></p>
+    <p>Plataforma para análise de desempenho escolar com dashboards interativos.</p>
+    <p><strong>3. Portfólio BI – Dashboards Interativos</strong></p>
+    <p>Aplicação em Streamlit com KPIs financeiros, logísticos e de performance.</p>
+    <p><strong>4. Home Page – Igreja Nossa Senhora de Fátima</strong></p>
+    <p>Site institucional com eventos, doações e contato.</p>
+
+    <p><strong>Links:</strong></p>
+    <ul>
+        <li><a href="https://ondemorar.streamlit.app/" target="_blank">📈 Especulação Imobiliária</a></li>
+        <li><a href="https://app.powerbi.com/view?r=eyJrIjoiYTUzNzlmMTQtM2RiNC00MWM1LTk3MTctY2ZkMTVmYTg5NmM2IiwidCI6IjMyMzQxYTA2LWI2OTAtNDgzNC05NGEzLWQwYjJmN2JkYTdlMCJ9" target="_blank">📊 Escritório Contabilidade</a></li>
+        <li><a href="https://app.powerbi.com/view?r=eyJrIjoiNWJhNGNlNDktM2I2MC00OWU5LWFhOGItZjkxZGNhOWNiOTQ4IiwidCI6IjMyMzQxYTA2LWI2OTAtNDgzNC05NGEzLWQwYjJmN2JkYTdlMCJ9" target="_blank">📈 Acidentes de Trânsito PRF</a></li>
+        <li><a href="https://nossasenhorafatima.netlify.app/" target="_blank">🌍 Site da Igreja Nossa Senhora de Fátima</a></li>
+    </ul>
+    <p>* Por motivos de confidencialidade, não é possível expor outros projetos.</p>
+    </div>
+</section>
+
+<!-- VÍDEOS -->
+<section id="videosefotos" class="container text-justify mt-4">
+    <div class="card">
+    <h2>Vídeos Nosso canal Youtube</h2>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=xfifqYcyrTI" target="_blank">📹 Apresentação do WR SYSTEM</a></li>
+        <li><a href="https://youtu.be/6zWlF6obxOw" target="_blank">📹 Demonstração do NEUROEDUC</a></li>
+    </ul>
+    </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="container text-justify mt-4">
+    <div class="card">
+    <h2>Contato</h2>
+    <p><i class="fa-solid fa-phone"></i> (82) 98109-0042 | (82) 98863-9394</p>
+    <p><i class="fa-solid fa-envelope"></i> dateanalytics@outlook.com</p>
+    <a href="https://www.linkedin.com/in/williamsrvs/" target="_blank" class="btn btn-primary"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+    <p></p>
+    <a href="https://github.com/williamsrvs" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-github"></i> Github</a>
+    <p></p>
+    <a href="https://wa.me/5582981090042" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2025 Williams Rodrigues. Todos os direitos reservados.</p>
+    <p>Desenvolvido por Williams Rodrigues</p>
+</footer>
+
+<!-- JS do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
